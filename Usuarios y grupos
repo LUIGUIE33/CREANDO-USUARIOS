@@ -1,0 +1,33 @@
+***Usuarios y grupos***
+
+*ingresar como superusuario
+COMANDO: su
+
+*Creamos el grupo
+
+COMANDO: grupoadd casa
+
+*luego creamos 3 usuarios
+
+COMANDO: useradd papi
+COMANDO: useradd mami
+COMANDO: useradd karinayop
+
+*añadir los usuarios al grupo creado   
+
+COMANDO: adduser papi casa
+COMANDO: adduser mami casa
+COMANDO: adduser karinayop casa
+
+
+*verificar grupos
+
+COMANDO: cat /etc/group
+
+*luego cambiamos el nombre del grupo
+
+COMANDO: groupmod -n Familia casa
+
+*verificar cambios en  grupos
+
+COMANDO: cat /etc/group
